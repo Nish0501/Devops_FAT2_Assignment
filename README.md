@@ -36,7 +36,7 @@ RUN chmod +x /commands.sh
 
 CMD ["/bin/bash", "/commands.sh"]
 
-text
+
 
 ### Step 2: Creating the commands.sh Script
 This script prints system information using basic Linux commands.
@@ -59,30 +59,30 @@ ps aux
 echo "Directory Tree:"
 tree /
 
-text
+
 
 ### Step 3: Building the Docker Image
 docker build -t my-linux-commands .
 
-text
+
 
 ### Step 4: Running the Docker Container
 docker run -it my-linux-commands
 
-text
+
 
 ### Step 5: Initializing a Git Repository
 git init
 git add .
 git commit -m "Initial commit with Dockerfile and shell script"
 
-text
+
 
 ### Step 6: Uploading Project to GitHub
 git remote add origin https://github.com/<username>/<repo>.git
 git push -u origin main
 
-text
+
 
 ---
 
