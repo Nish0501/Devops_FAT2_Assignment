@@ -1,6 +1,6 @@
 # DevOps Assignment – Dockerfile & Basic Linux Commands
 
-## 1. Key DevOps Concepts (Explained in Simple Words)
+## 1. Key DevOps Concepts
 
 ### 1. CI/CD (Continuous Integration & Continuous Deployment)
 A workflow where every code change is automatically built, tested, and deployed. This speeds up releases and reduces the chances of errors during deployment.
