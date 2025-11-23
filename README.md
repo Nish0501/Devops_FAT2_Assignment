@@ -79,7 +79,7 @@ git commit -m "Initial commit with Dockerfile and shell script"
 
 
 ### Step 6: Uploading Project to GitHub
-git remote add origin https://github.com/<username>/<repo>.git
+git remote add origin https://github.com/Nish0501/Devops_FAT2_Assignment.git
 git push -u origin main
 
 
