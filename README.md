@@ -1,4 +1,3 @@
-```markdown
 # DevOps Assignment – Dockerfile & Basic Linux Commands
 
 ## 1. Key DevOps Concepts (Explained in Simple Words)
@@ -26,24 +25,23 @@ Automation removes repetitive tasks like testing, building, or deployments by us
 I created a Dockerfile using Ubuntu as the base image. Inside the image, I installed some basic Linux tools and included a shell script that runs multiple commands.
 
 **Dockerfile**
-```
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y \
-    tree \
-    procps && apt-get clean
+RUN apt-get update && apt-get install -y
+tree
+procps && apt-get clean
 
 COPY commands.sh /commands.sh
 RUN chmod +x /commands.sh
 
 CMD ["/bin/bash", "/commands.sh"]
-```
+
+text
 
 ### Step 2: Creating the commands.sh Script
 This script prints system information using basic Linux commands.
 
 **commands.sh**
-```
 #!/bin/bash
 
 echo "Current Directory:"
@@ -60,30 +58,31 @@ ps aux
 
 echo "Directory Tree:"
 tree /
-```
+
+text
 
 ### Step 3: Building the Docker Image
-```
 docker build -t my-linux-commands .
-```
+
+text
 
 ### Step 4: Running the Docker Container
-```
 docker run -it my-linux-commands
-```
+
+text
 
 ### Step 5: Initializing a Git Repository
-```
 git init
 git add .
 git commit -m "Initial commit with Dockerfile and shell script"
-```
+
+text
 
 ### Step 6: Uploading Project to GitHub
-```
 git remote add origin https://github.com/<username>/<repo>.git
 git push -u origin main
-```
+
+text
 
 ---
 
@@ -100,9 +99,3 @@ Using Git taught me how to track changes, create commits, push to a remote repos
 
 ### Docker Fundamentals
 By writing a Dockerfile, building an image, and running a container, I learned how containerization simplifies application setup and deployment.
-```
-
-
-[6](https://learn.microsoft.com/en-us/azure/devops/project/wiki/markdown-guidance?view=azure-devops)
-[7](https://www.jetbrains.com/help/hub/markdown-syntax.html)
-[8](https://commonmark.org/help/tutorial/09-code.html)
